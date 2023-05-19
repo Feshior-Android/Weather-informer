@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:text="@string/logo_text"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+
+        />
+
+
+
+    <EditText
+    android:id="@+id/city_name"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/logo"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:hint="@string/hint_text"
+        android:textColorHint="@color/white"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="2dp"
+        ></EditText>
+
+    
+    <Button
+        android:id="@+id/get_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60sp"
+        android:layout_marginTop = "20dp"
+        android:layout_below="@id/city_name"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/btn_text"
+        android:textColor="@color/purple_700"
+        android:textSize="14sp"
+        ></Button>
+
+    <Button
+        android:id="@+id/get_weather_for_tomorrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60sp"
+        android:layout_marginTop = "20dp"
+        android:layout_below="@id/get_weather"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/btn_tomorrow_text"
+        android:textColor="@color/purple_700"
+        android:textSize="14sp"
+        ></Button>
+    
+    <TextView
+        android:id="@+id/result_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/get_weather_for_tomorrow"
+        android:text="@string/place_text"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"></TextView>
+
+
+    
+</RelativeLayout>

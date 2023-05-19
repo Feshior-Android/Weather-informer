@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Weather Informer</string>
+    <string name="place_text">Weather information</string>
+
+    <string name="logo_text">Worldwide weather</string>
+    <string name="hint_text">Enter city</string>
+    <string name="btn_text">Get weather</string>
+    <string name="btn_tomorrow_text">Get weather for tomorrow</string>
+
+    <string name="empty_city_message">You haven\'t entered city name</string>
+    <string name="preload_message">Fetching data</string>
+    <string name="err_load_message">Entered city is missing in our database</string>
+    <string name="request_err_message">Failed to send a request</string>
+</resources>
